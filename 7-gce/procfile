@@ -1,3 +1,3 @@
-bookshelf: python3 main.py
-worker: psqworker --pid /tmp/psq.pid main.books_queue
+bookshelf: /opt/app/7-gce/env/bin/python3 main.py
+worker: /opt/app/7-gce/env/bin/psqworker --pid /tmp/psq.pid main.books_queue
 monitor: python monitor.py /tmp/psq.pid
